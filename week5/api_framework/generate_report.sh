@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# 获取脚本所在目录的绝对路径
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# 切换到脚本所在目录
+cd "$SCRIPT_DIR"
+
 echo "===生成测试报告==="
 
 #运行所有测试并生成报告
